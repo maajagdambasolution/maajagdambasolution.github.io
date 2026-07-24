@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { company, keyServices, whyChooseUs } from "@/lib/site-data";
+import { keyServices, whyChooseUs } from "@/lib/site-data";
 
 export const metadata: Metadata = {
   title: "Home | Maa Jagdamba Solution Private Limited",
@@ -12,7 +12,7 @@ export default function Home() {
   return (
     <>
       <section className="hero-section">
-        <div className="container hero-grid">
+        <div className="container hero-grid hero-grid-single">
           <div>
             <p className="eyebrow">Maa Jagdamba Solution Private Limited</p>
             <h1>Trusted Financial, Taxation & Business Advisory Services</h1>
@@ -33,16 +33,6 @@ export default function Home() {
               </Link>
             </div>
           </div>
-          <aside className="hero-panel">
-            <h2>Company Snapshot</h2>
-            <ul>
-              <li>Incorporated on 03 February 2026</li>
-              <li>Private Limited Company</li>
-              <li>Registered in Ranchi, Jharkhand</li>
-              <li>ROC: ROC Ranchi</li>
-              <li>CIN: {company.cin}</li>
-            </ul>
-          </aside>
         </div>
       </section>
 
@@ -58,20 +48,6 @@ export default function Home() {
                 <h3>{service}</h3>
               </article>
             ))}
-          </div>
-        </div>
-      </section>
-
-      <section className="section home-about">
-        <div className="container">
-          <div className="section-head">
-            <p className="eyebrow">About The Company</p>
-            <h2>Reliable Support for Finance, Tax and Compliance Needs</h2>
-            <p>
-              Maa Jagdamba Solution Private Limited is a Ranchi-based private
-              limited company providing financial, accounting, taxation,
-              compliance, and business advisory services.
-            </p>
           </div>
         </div>
       </section>

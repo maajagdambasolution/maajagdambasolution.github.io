@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { company } from "@/lib/site-data";
+import { company, keyServices } from "@/lib/site-data";
 
 export const metadata: Metadata = {
   title: "About Us | Maa Jagdamba Solution Private Limited",
@@ -71,6 +71,35 @@ export default function AboutPage() {
               advisory for sustained growth.
             </p>
           </article>
+        </div>
+
+        <div className="section about-extras">
+          <div className="section-head">
+            <p className="eyebrow">Company Snapshot</p>
+            <h2>At a Glance</h2>
+          </div>
+
+          <div className="info-grid">
+            <article className="info-card">
+              <h3>Snapshot Details</h3>
+              <ul className="service-list">
+                <li>Incorporated on 03 February 2026</li>
+                <li>Private Limited Company</li>
+                <li>Registered in Ranchi, Jharkhand</li>
+                <li>ROC: ROC Ranchi</li>
+                <li>CIN: {company.cin}</li>
+              </ul>
+            </article>
+
+            <article className="info-card">
+              <h3>Key Services</h3>
+              <ul className="service-list">
+                {keyServices.map((service) => (
+                  <li key={service}>{service}</li>
+                ))}
+              </ul>
+            </article>
+          </div>
         </div>
       </div>
     </section>

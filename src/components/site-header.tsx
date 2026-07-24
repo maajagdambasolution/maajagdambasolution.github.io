@@ -1,8 +1,10 @@
 "use client";
 
 import Link from "next/link";
+import { TopNumbersTicker } from "@/components/top-numbers-ticker";
+import { TopServicesTicker } from "@/components/top-services-ticker";
 import { usePathname } from "next/navigation";
-import { company, navLinks } from "@/lib/site-data";
+import { company, keyServices, navLinks } from "@/lib/site-data";
 
 export function SiteHeader() {
   const pathname = usePathname();
@@ -36,10 +38,25 @@ export function SiteHeader() {
             })}
           </ul>
         </nav>
+      </div>
 
-        <Link href="/contact" className="header-cta">
-          Request Consultation
-        </Link>
+      <div className="top-services-bar" aria-label="Top key services">
+        <div className="container top-services-wrap">
+          <div className="top-inline-group">
+            <p className="top-services-title">Key Service:</p>
+            <TopServicesTicker services={keyServices} />
+          </div>
+          <div className="top-inline-group">
+            <p className="top-call-title">Call Us On:</p>
+            <TopNumbersTicker numbers={["999999999"]} prefix="+91 " />
+          </div>
+          <div className="top-inline-group">
+            <p className="top-email-title">Email ID:</p>
+            <a href={`mailto:${company.emailPlaceholder}`} className="top-email-chip">
+              <span className="top-email-text">{company.emailPlaceholder}</span>
+            </a>
+          </div>
+        </div>
       </div>
     </header>
   );
