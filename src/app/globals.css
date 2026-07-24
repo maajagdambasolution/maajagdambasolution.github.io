@@ -723,6 +723,8 @@ address {
 }
 
 .footer-link {
+  text-decoration: underline;
+  text-underline-offset: 2px;
   transition: color 0.2s ease;
 }
 
@@ -763,6 +765,10 @@ address {
 .copyright-line {
   color: #ffe2a1;
   font-weight: 700;
+}
+
+.footer-credit-small {
+  font-size: 0.84rem;
 }
 
 @media (max-width: 1024px) {

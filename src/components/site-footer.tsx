@@ -56,7 +56,13 @@ export function SiteFooter() {
             <strong>Phone:</strong> {company.phonePlaceholder}
           </p>
           <p>
-            <strong>Email:</strong> {company.emailPlaceholder}
+            <strong>Email:</strong>{" "}
+            <a
+              href={`mailto:${company.emailPlaceholder}`}
+              className="footer-link"
+            >
+              {company.emailPlaceholder}
+            </a>
           </p>
           <p>
             <strong>WhatsApp:</strong> {company.whatsappPlaceholder}
@@ -78,7 +84,13 @@ export function SiteFooter() {
             {company.name} - Financial, accounting, taxation, compliance, and
             business advisory services in Ranchi, Jharkhand.
           </p>
-          <p className="copyright-line">© 2026 {company.name}</p>
+          <p className="copyright-line footer-credit-small">
+            ©2026 {company.name} | Design &amp; Developed by Nikesh Singh ([
+            <a href="mailto:nikesh.singh@aol.com" className="footer-link">
+              nikesh.singh@aol.com
+            </a>
+            ])
+          </p>
         </div>
       </div>
     </footer>
