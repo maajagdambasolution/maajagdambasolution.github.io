@@ -38,17 +38,53 @@ This project is configured for static export, so the generated static files are 
 
 Repository name should be:
 
-jagdambasolutions.github.io
+maajagdambasolution.github.io
 
-Deployment steps:
+Deployment steps (current setup used in this repository):
 
-1. Push this repository to GitHub.
-2. Build the site:
+1. Build the static site:
 
 	npm run build
 
-3. The static output will be generated in the out folder.
-4. Publish the out folder to GitHub Pages (or configure a GitHub Action that deploys it automatically).
+2. Copy static export from out to repository root:
+
+	Copy-Item -Path "out\*" -Destination "." -Recurse -Force
+
+3. Ensure .nojekyll exists:
+
+	New-Item -Path ".nojekyll" -ItemType File -Force
+
+4. Commit and push:
+
+	git add -A
+	git commit -m "Republish Pages output"
+	git push origin HEAD:main
+
+5. Open the live site with a cache-busting query if needed:
+
+	https://maajagdambasolution.github.io/?v=timestamp
+
+## Git Commands Cheat Sheet
+
+Common status/history commands:
+
+	git status --short
+	git status -sb
+	git log --oneline -5
+	git rev-parse HEAD
+	git rev-parse origin/main
+
+Fetch/pull/push commands:
+
+	git fetch origin
+	git pull origin main
+	git push origin HEAD:main
+
+Staging and commit commands:
+
+	git add -A
+	git add src/components/site-footer.tsx src/app/globals.css
+	git commit -m "Your commit message"
 
 ## SEO Positioning
 

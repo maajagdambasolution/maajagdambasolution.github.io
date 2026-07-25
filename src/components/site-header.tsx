@@ -48,7 +48,7 @@ export function SiteHeader() {
           </div>
           <div className="top-inline-group">
             <p className="top-call-title">Call Us On:</p>
-            <TopNumbersTicker numbers={["999999999"]} prefix="+91 " />
+            <TopNumbersTicker numbers={[company.phonePlaceholder]} prefix="+91 " />
           </div>
           <div className="top-inline-group">
             <p className="top-email-title">Email ID:</p>

@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
-import { company, keyServices } from "@/lib/site-data";
+import Link from "next/link";
+import { company, pricingServices } from "@/lib/site-data";
 
 export const metadata: Metadata = {
   title: "Contact | Maa Jagdamba Solution Private Limited",
@@ -7,7 +8,16 @@ export const metadata: Metadata = {
     "Contact Maa Jagdamba Solution Private Limited for GST, accounting, taxation, ROC filing, audit and business advisory services in Ranchi.",
 };
 
-export default function ContactPage() {
+export default function ContactPage({
+  searchParams,
+}: {
+  searchParams?: { service?: string };
+}) {
+  const selectedService = searchParams?.service ? searchParams.service : "";
+  const selectedMessage = selectedService
+    ? `I would like a quote for ${selectedService}.`
+    : "";
+
   return (
     <section className="section">
       <div className="container">
@@ -73,22 +83,40 @@ export default function ContactPage() {
               />
 
               <label htmlFor="serviceRequired">Service Required</label>
-              <select id="serviceRequired" name="serviceRequired" required>
+              <select
+                id="serviceRequired"
+                name="serviceRequired"
+                defaultValue={selectedService}
+                required
+              >
                 <option value="">Select a service</option>
-                {keyServices.map((service) => (
-                  <option key={service} value={service}>
-                    {service}
+                {pricingServices.map((service) => (
+                  <option key={service.name} value={service.name}>
+                    {service.name}
                   </option>
                 ))}
               </select>
 
               <label htmlFor="message">Message</label>
-              <textarea id="message" name="message" rows={5} required />
+              <textarea
+                id="message"
+                name="message"
+                rows={5}
+                defaultValue={selectedMessage}
+                required
+              />
 
               <button type="submit" className="btn btn-primary">
                 Submit Enquiry
               </button>
             </form>
+
+            {selectedService ? (
+              <p className="contact-prefill-note">
+                Service pre-selected from the pricing page. Need a different
+                option? <Link href="/pricing">Review pricing</Link>.
+              </p>
+            ) : null}
           </article>
         </div>
 

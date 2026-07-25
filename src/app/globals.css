@@ -643,6 +643,321 @@ address {
   resize: vertical;
 }
 
+.contact-prefill-note {
+  margin-top: 0.9rem;
+  color: var(--text-700);
+}
+
+.contact-prefill-note a {
+  color: var(--navy-700);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.pricing-hero-section {
+  background:
+    radial-gradient(circle at 12% 12%, rgba(210, 167, 74, 0.18), transparent 28%),
+    radial-gradient(circle at 88% 18%, rgba(22, 59, 115, 0.12), transparent 24%),
+    linear-gradient(180deg, #f9fbff 0%, #ffffff 88%);
+}
+
+.pricing-hero-grid {
+  display: grid;
+  grid-template-columns: 1.15fr 0.85fr;
+  gap: 1rem;
+  align-items: start;
+}
+
+.pricing-hero-copy {
+  margin-bottom: 0;
+}
+
+.pricing-hero-copy p:last-child {
+  max-width: 60ch;
+}
+
+.pricing-title-highlight {
+  color: #0f4c81;
+}
+
+.pricing-list-section {
+  padding-top: 2rem;
+}
+
+.pricing-hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-top: 1.5rem;
+}
+
+.pricing-summary-card {
+  display: grid;
+  gap: 0.9rem;
+}
+
+.pricing-summary-card dl {
+  display: grid;
+  gap: 0.8rem;
+}
+
+.pricing-summary-card dl div {
+  padding-bottom: 0.7rem;
+  border-bottom: 1px solid var(--light-200);
+}
+
+.pricing-summary-card dd {
+  font-weight: 700;
+  color: var(--navy-900);
+}
+
+.pricing-pdf-button {
+  width: fit-content;
+}
+
+.pricing-toolbar {
+  display: grid;
+  gap: 1rem;
+  margin-top: 0.35rem;
+  margin-bottom: 1rem;
+}
+
+.pricing-search-field {
+  display: grid;
+  gap: 0.45rem;
+  max-width: 560px;
+}
+
+.pricing-search-field-hero {
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+.pricing-search-field span {
+  font-weight: 700;
+  color: var(--navy-900);
+}
+
+.pricing-search-field input {
+  border: 1px solid #cad5e6;
+  border-radius: 12px;
+  padding: 0.8rem 0.95rem;
+  font: inherit;
+  background: #ffffff;
+}
+
+.pricing-filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.65rem;
+}
+
+.pricing-filter-button {
+  border: 1px solid #cdd8ea;
+  background: #ffffff;
+  color: var(--navy-700);
+  border-radius: 999px;
+  padding: 0.58rem 0.95rem;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.pricing-filter-button.active {
+  background: linear-gradient(135deg, var(--navy-700), var(--navy-900));
+  color: #ffffff;
+  border-color: transparent;
+}
+
+.pricing-results {
+  margin-bottom: 0.95rem;
+  color: var(--text-700);
+  font-weight: 600;
+}
+
+.pricing-table-shell {
+  background: var(--white);
+  border: 1px solid var(--light-200);
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 12px 24px rgba(11, 31, 63, 0.06);
+}
+
+.pricing-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.pricing-table th,
+.pricing-table td {
+  border-bottom: 1px solid #e8edf5;
+  padding: 1rem;
+  vertical-align: top;
+  text-align: left;
+}
+
+.pricing-table th {
+  background: #f5f7fb;
+  color: var(--navy-900);
+  font-size: 0.95rem;
+}
+
+.pricing-table tr:last-child td {
+  border-bottom: 0;
+}
+
+.pricing-service-name {
+  display: flex;
+  align-items: center;
+  gap: 0.55rem;
+  flex-wrap: wrap;
+}
+
+.pricing-table-description {
+  margin-top: 0.45rem;
+  color: var(--text-700);
+  font-size: 0.94rem;
+}
+
+.pricing-category-badge,
+.pricing-popular-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 999px;
+  padding: 0.3rem 0.65rem;
+  font-size: 0.74rem;
+  font-weight: 800;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+}
+
+.pricing-category-badge {
+  background: #eef3fc;
+  color: var(--navy-700);
+}
+
+.pricing-popular-badge {
+  background: linear-gradient(135deg, var(--gold-500), var(--gold-400));
+  color: #2a1a00;
+}
+
+.pricing-price-cell,
+.pricing-card-price {
+  font-size: 1.08rem;
+  font-weight: 800;
+  color: var(--navy-900);
+}
+
+.pricing-inline-action {
+  white-space: nowrap;
+}
+
+.pricing-card-shell {
+  display: none;
+}
+
+.pricing-card {
+  display: grid;
+  gap: 0.85rem;
+}
+
+.pricing-card-top {
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+  gap: 0.75rem;
+}
+
+.pricing-card-category {
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 0.76rem;
+  font-weight: 800;
+  color: var(--gold-500);
+  margin-bottom: 0.35rem;
+}
+
+.pricing-card h2 {
+  font-size: 1.15rem;
+}
+
+.pricing-card-description {
+  color: var(--text-700);
+}
+
+.pricing-card-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+
+.pricing-cta-grid {
+  display: grid;
+  grid-template-columns: 1fr 1.15fr;
+  gap: 1rem;
+}
+
+.pricing-contact-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-top: 0.5rem;
+}
+
+.pricing-footer-section {
+  padding-top: 0;
+}
+
+.pricing-footer-card {
+  display: grid;
+  gap: 0.9rem;
+}
+
+.pricing-footer-address {
+  display: grid;
+  gap: 0.2rem;
+  color: var(--text-700);
+  margin-top: 0.45rem;
+}
+
+.pricing-footer-disclaimer {
+  color: var(--text-700);
+}
+
+.pricing-footer-copyright {
+  font-weight: 700;
+  color: var(--navy-900);
+}
+
+.pricing-disclaimer-card p,
+.pricing-contact-card p {
+  color: var(--text-700);
+}
+
+.floating-whatsapp-button {
+  position: fixed;
+  right: 18px;
+  bottom: 18px;
+  z-index: 30;
+  max-width: 220px;
+  padding: 0.85rem 1rem;
+  border-radius: 999px;
+  background: linear-gradient(135deg, #20a663, #11864b);
+  color: #ffffff;
+  font-weight: 800;
+  box-shadow: 0 12px 25px rgba(17, 134, 75, 0.3);
+}
+
+.floating-whatsapp-button:hover {
+  color: #ffffff;
+}
+
+.pricing-empty-state {
+  padding: 1.35rem;
+  color: var(--text-700);
+  text-align: center;
+}
+
 .map-section {
   margin-top: 2rem;
 }
@@ -790,6 +1105,11 @@ address {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
+  .pricing-hero-grid,
+  .pricing-cta-grid {
+    grid-template-columns: 1fr;
+  }
+
   .footer-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
@@ -800,6 +1120,8 @@ address {
   .info-grid,
   .service-group-grid,
   .contact-grid,
+  .pricing-hero-grid,
+  .pricing-cta-grid,
   .footer-grid {
     grid-template-columns: 1fr;
   }
@@ -810,6 +1132,23 @@ address {
 
   .services-grid {
     grid-template-columns: 1fr;
+  }
+
+  .pricing-table-shell {
+    display: none;
+  }
+
+  .pricing-card-shell {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: 1fr;
+  }
+
+  .floating-whatsapp-button {
+    left: 16px;
+    right: 16px;
+    max-width: none;
+    text-align: center;
   }
 
   .nav-list {
