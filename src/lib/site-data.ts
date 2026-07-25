@@ -1,8 +1,8 @@
 export const company = {
-  name: "Maa Jagdamba Solution Private Limited",
+  name: "Maa Jagdamba Solution Pvt. Ltd.",
   shortDescription:
     "Financial, accounting, taxation, compliance, and business advisory services in Ranchi, Jharkhand.",
-  type: "Private Limited Company",
+  type: "Pvt. Ltd. Company",
   incorporationDate: "03 February 2026",
   location: "Ranchi, Jharkhand",
   roc: "ROC Ranchi",
@@ -60,10 +60,10 @@ export const pricingFilters = [
 
 export const pricingServices: PricingService[] = [
   {
-    name: "Private Limited Company Registration",
+    name: "Pvt. Ltd. Company Registration",
     price: "₹9,999",
     category: "Registration",
-    description: "Complete incorporation support for a private limited company.",
+    description: "Complete incorporation support for a Pvt. Ltd. company.",
     featured: true,
   },
   {

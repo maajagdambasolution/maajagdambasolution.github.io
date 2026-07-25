@@ -13,7 +13,7 @@ export function SiteHeader() {
     <header className="site-header">
       <div className="container header-inner">
         <Link href="/" className="brand" aria-label={company.name}>
-          <span className="brand-top">Maa Jagdamba Solution Private Limited</span>
+          <span className="brand-top">Maa Jagdamba Solution Pvt. Ltd.</span>
           <span className="brand-bottom">Financial, Taxation & Advisory Services</span>
         </Link>
 

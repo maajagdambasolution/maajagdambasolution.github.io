@@ -3,7 +3,7 @@ import Link from "next/link";
 import { keyServices, whyChooseUs } from "@/lib/site-data";
 
 export const metadata: Metadata = {
-  title: "Home | Maa Jagdamba Solution Private Limited",
+  title: "Home | Maa Jagdamba Solution Pvt. Ltd.",
   description:
     "Trusted financial, taxation and business advisory services including GST filing, accounting, ROC filing and company registration in Ranchi.",
 };
@@ -14,7 +14,7 @@ export default function Home() {
       <section className="hero-section">
         <div className="container hero-grid hero-grid-single">
           <div>
-            <p className="eyebrow">Maa Jagdamba Solution Private Limited</p>
+            <p className="eyebrow">Maa Jagdamba Solution Pvt. Ltd.</p>
             <h1>Trusted Financial, Taxation & Business Advisory Services</h1>
             <p className="hero-subtitle">
               Helping individuals and businesses with accounting, GST, income
@@ -71,7 +71,7 @@ export default function Home() {
           <h2>
             Need help with GST, accounting, tax filing, or company registration?
           </h2>
-          <p>Contact Maa Jagdamba Solution Private Limited today.</p>
+          <p>Contact Maa Jagdamba Solution Pvt. Ltd. today.</p>
           <Link href="/contact" className="btn btn-primary">
             Contact Us
           </Link>

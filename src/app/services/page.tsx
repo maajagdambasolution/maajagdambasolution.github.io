@@ -2,9 +2,9 @@ import type { Metadata } from "next";
 import { serviceGroups } from "@/lib/site-data";
 
 export const metadata: Metadata = {
-  title: "Services | Maa Jagdamba Solution Private Limited",
+  title: "Services | Maa Jagdamba Solution Pvt. Ltd.",
   description:
-    "Explore accounting, GST, income tax, ROC filing, compliance, audit, and business advisory services by Maa Jagdamba Solution Private Limited in Ranchi.",
+    "Explore accounting, GST, income tax, ROC filing, compliance, audit, and business advisory services by Maa Jagdamba Solution Pvt. Ltd. in Ranchi.",
 };
 
 export default function ServicesPage() {

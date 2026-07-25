@@ -3,9 +3,9 @@ import Link from "next/link";
 import { company, pricingServices } from "@/lib/site-data";
 
 export const metadata: Metadata = {
-  title: "Contact | Maa Jagdamba Solution Private Limited",
+  title: "Contact | Maa Jagdamba Solution Pvt. Ltd.",
   description:
-    "Contact Maa Jagdamba Solution Private Limited for GST, accounting, taxation, ROC filing, audit and business advisory services in Ranchi.",
+    "Contact Maa Jagdamba Solution Pvt. Ltd. for GST, accounting, taxation, ROC filing, audit and business advisory services in Ranchi.",
 };
 
 export default function ContactPage({
@@ -124,7 +124,7 @@ export default function ContactPage({
           <h2>Find Us on Map</h2>
           <div className="map-wrapper">
             <iframe
-              title="Maa Jagdamba Solution Private Limited Location"
+              title="Maa Jagdamba Solution Pvt. Ltd. Location"
               src="https://maps.google.com/maps?q=Birsa%20Chowk%20Ranchi&t=&z=13&ie=UTF8&iwloc=&output=embed"
               loading="lazy"
               referrerPolicy="no-referrer-when-downgrade"

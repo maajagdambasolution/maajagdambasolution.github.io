@@ -2,9 +2,9 @@ import type { Metadata } from "next";
 import { company, keyServices } from "@/lib/site-data";
 
 export const metadata: Metadata = {
-  title: "About Us | Maa Jagdamba Solution Private Limited",
+  title: "About Us | Maa Jagdamba Solution Pvt. Ltd.",
   description:
-    "Learn about Maa Jagdamba Solution Private Limited, a Ranchi-based private limited company offering accounting, taxation, compliance and advisory services.",
+    "Learn about Maa Jagdamba Solution Pvt. Ltd., a Ranchi-based Pvt. Ltd. company offering accounting, taxation, compliance and advisory services.",
 };
 
 export default function AboutPage() {
@@ -13,10 +13,10 @@ export default function AboutPage() {
       <div className="container">
         <div className="section-head">
           <p className="eyebrow">About Us</p>
-          <h1>Maa Jagdamba Solution Private Limited</h1>
+          <h1>Maa Jagdamba Solution Pvt. Ltd.</h1>
           <p>
-            Maa Jagdamba Solution Private Limited is a Ranchi-based private
-            limited company providing financial, accounting, taxation,
+            Maa Jagdamba Solution Pvt. Ltd. is a Ranchi-based Pvt. Ltd.
+            company providing financial, accounting, taxation,
             compliance, and business advisory services. The company supports
             individuals, startups, small businesses, and organizations with
             reliable documentation, GST, income tax, ROC filing, bookkeeping,
@@ -84,7 +84,7 @@ export default function AboutPage() {
               <h3>Snapshot Details</h3>
               <ul className="service-list">
                 <li>Incorporated on 03 February 2026</li>
-                <li>Private Limited Company</li>
+                <li>Pvt. Ltd. Company</li>
                 <li>Registered in Ranchi, Jharkhand</li>
                 <li>ROC: ROC Ranchi</li>
                 <li>CIN: {company.cin}</li>

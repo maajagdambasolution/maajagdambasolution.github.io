@@ -1,8 +1,8 @@
-# Maa Jagdamba Solution Private Limited Website
+# Maa Jagdamba Solution Pvt. Ltd. Website
 
 This repository contains a Next.js website for:
 
-Maa Jagdamba Solution Private Limited  
+Maa Jagdamba Solution Pvt. Ltd.  
 Financial, accounting, taxation, compliance, and business advisory services in Ranchi, Jharkhand.
 
 ## Included Pages
@@ -90,4 +90,4 @@ Staging and commit commands:
 
 Primary positioning:
 
-Maa Jagdamba Solution Private Limited - Financial, Accounting, Taxation & Business Advisory Services in Ranchi, Jharkhand
+Maa Jagdamba Solution Pvt. Ltd. - Financial, Accounting, Taxation & Business Advisory Services in Ranchi, Jharkhand

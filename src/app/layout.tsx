@@ -17,9 +17,9 @@ const lora = Lora({
 export const metadata: Metadata = {
   metadataBase: new URL("https://jagdambasolutions.github.io"),
   title:
-    "Maa Jagdamba Solution Private Limited | Accounting, GST, Tax & Business Advisory Services in Ranchi",
+    "Maa Jagdamba Solution Pvt. Ltd. | Accounting, GST, Tax & Business Advisory Services in Ranchi",
   description:
-    "Maa Jagdamba Solution Private Limited provides accounting, GST filing, GST return, income tax, TDS, ROC filing, company registration, audit, and business advisory services in Ranchi, Jharkhand.",
+    "Maa Jagdamba Solution Pvt. Ltd. provides accounting, GST filing, GST return, income tax, TDS, ROC filing, company registration, audit, and business advisory services in Ranchi, Jharkhand.",
   keywords: [
     "Accounting services in Ranchi",
     "GST filing in Ranchi",
@@ -32,15 +32,15 @@ export const metadata: Metadata = {
     "Bookkeeping services Ranchi",
     "Internal audit services Ranchi",
     "Financial consultant Ranchi",
-    "Maa Jagdamba Solution Private Limited",
+    "Maa Jagdamba Solution Pvt. Ltd.",
   ],
   openGraph: {
     title:
-      "Maa Jagdamba Solution Private Limited | Accounting, GST, Tax & Business Advisory Services in Ranchi",
+      "Maa Jagdamba Solution Pvt. Ltd. | Accounting, GST, Tax & Business Advisory Services in Ranchi",
     description:
       "Financial, accounting, taxation, compliance, and business advisory services in Ranchi, Jharkhand.",
     url: "https://jagdambasolutions.github.io",
-    siteName: "Maa Jagdamba Solution Private Limited",
+    siteName: "Maa Jagdamba Solution Pvt. Ltd.",
     locale: "en_IN",
     type: "website",
   },
