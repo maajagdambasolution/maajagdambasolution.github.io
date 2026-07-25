@@ -5,7 +5,7 @@ import { keyServices, whyChooseUs } from "@/lib/site-data";
 export const metadata: Metadata = {
   title: "Home | Maa Jagdamba Solution Pvt. Ltd.",
   description:
-    "Trusted financial, taxation and business advisory services including GST filing, accounting, ROC filing and company registration in Ranchi.",
+    "Trusted financial, taxation, GST filing, accounting, ROC filing and company registration including business advisory services in Ranchi.",
 };
 
 export default function Home() {
@@ -15,7 +15,7 @@ export default function Home() {
         <div className="container hero-grid hero-grid-single">
           <div>
             <p className="eyebrow">Maa Jagdamba Solution Pvt. Ltd.</p>
-            <h1>Trusted Financial, Taxation & Business Advisory Services</h1>
+            <h1>Trusted Financial, Taxation, GST & Accounting Services</h1>
             <p className="hero-subtitle">
               Helping individuals and businesses with accounting, GST, income
               tax, ROC filing, audit, company registration, and financial

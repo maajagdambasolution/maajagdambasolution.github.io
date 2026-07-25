@@ -29,13 +29,13 @@ Use this process to pull latest code, make updates, and publish to GitHub Pages.
 
     cd C:\Users\Z003E1PZ\OneDrive - Siemens Healthineers\Workspace\Learning\nikesh-portfolio\maajagdambasolution.github.io
 
-2. Switch to master branch
+2. Switch to main branch
 
-    git checkout master
+    git checkout main
 
 3. Pull latest changes
 
-    git pull origin master
+    git pull origin main
 
 4. Make your code/content changes.
 
@@ -63,21 +63,16 @@ Use this process to pull latest code, make updates, and publish to GitHub Pages.
 
     git commit -m "Your update message"
 
-11. Push to master
+11. Push to main
 
-    git push origin master
+    git push origin main
 
-12. Push the same commit to main (Pages serving branch)
-
-    git push origin master:main
-
-13. Confirm both branches point to same commit
+12. Confirm local and remote main point to same commit
 
     git rev-parse HEAD
-    git rev-parse origin/master
     git rev-parse origin/main
 
-14. Open site with cache-busting query and hard refresh
+13. Open site with cache-busting query and hard refresh
 
     https://maajagdambasolution.github.io/?v=timestamp
 
@@ -90,8 +85,7 @@ Use this process to pull latest code, make updates, and publish to GitHub Pages.
     New-Item -Path ".nojekyll" -ItemType File -Force
     git add -A
     git commit -m "Update site"
-    git push origin master
-    git push origin master:main
+    git push origin main
 
 ## 4) Troubleshooting
 
@@ -100,12 +94,11 @@ Use this process to pull latest code, make updates, and publish to GitHub Pages.
 1. Pull latest updates first
 
     git fetch origin
-    git pull origin master
+    git pull origin main
 
 2. Try push again
 
-    git push origin master
-    git push origin master:main
+    git push origin main
 
 ### B) Remote URL is wrong
 
